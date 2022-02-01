@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+        <!-- Code greatly inspired from here : https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/ -->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -22,12 +23,111 @@
     <nav>
         <h1>Lucas HEIDET</h1>
         <ul class="navigation">
-            <li><a href="#apropos" class="nav-link">&Agrave propos</a></li>
+            <li><a href="#apropos" class="nav-link">&Agrave propos de moi</a></li>
             <li><a href="#skills" class="nav-link">Comp&eacutetences</a></li>
             <li><a href="#projects" class="nav-link">Projets</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
     </nav>
+
+    <section class="myself" id="apropos">
+        <img
+                src="#"
+                alt="Lucas Heidet"
+                loading="lazy"
+                class="img-me" />
+        <div class="bio animate__animated animate__pulse">
+            <h2 class="bio-title">&Agrave propos de moi</h2>
+            <p class="bio-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores deserunt expedita harum,
+                laboriosam odio officia perferendis perspiciatis quaerat quas vitae. Corporis deleniti dicta,
+                eos harum iusto officia quaerat quas soluta.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="skill-header">Comp&eacutetences</h2>
+
+        <div class="skill-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img
+                        src="assets/img/icons8-java.svg"
+                        alt=""
+                        title="Java"
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+                <img
+                        src="assets/img/icons8-javascript.svg"
+                        title="Javascript"
+
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+                <img
+                        src="assets/img/icons8-python.svg"
+                        alt=""
+                        title="Python"
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <img
+                        src="assets/img/icons8-c-programming.svg"
+                        alt=""
+                        title="C"
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+                <img
+                        src="assets/img/icons8-mysql-logo.svg"
+                        alt=""
+                        title="MySQL"
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+                <img
+                        src="assets/img/icons8-git.svg"
+                        alt=""
+                        title="Git"
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+            </div>
+
+            <div class="third-set animate__animated animate__pulse">
+                <img
+                        src="assets/img/icons8-html-5.svg"
+                        alt=""
+                        title="HTML5"
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+                <img
+                        src="assets/img/icons8-css3.svg"
+                        alt=""
+                        title="CSS3"
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+                <img
+                        src="assets/img/icons8-nodejs.svg"
+                        alt=""
+                        title="NodeJS"
+                        loading="lazy"
+                        class="icon icon-card"
+                />
+            </div>
+        </div>
+
+    </section>
 
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
