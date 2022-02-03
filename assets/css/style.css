@@ -105,6 +105,7 @@ nav ul li {
     gap: 2.5rem;
     max-width: 68.75rem;
     scroll-margin-top: 5rem;
+    margin: auto;
 }
 
 .bio {
@@ -130,7 +131,7 @@ nav ul li {
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
-    scroll-margin-top: 5rem;
+    scroll-margin-top: 6rem;
 }
 
 .skill-header {
@@ -207,6 +208,7 @@ nav ul li {
 /*Contact section */
 .contact {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     scroll-margin-top: 5rem;
 }
 
@@ -265,6 +267,59 @@ nav ul li {
     border: 2px solid var(--primary-color);
     cursor: pointer;
     color: var(--bg-color);
+}
+
+/* Projet maintenu section*/
+.maintenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 2.5rem;
+    max-width: 60.625rem;
+    scroll-margin-top: 5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.maintenu img{
+    height: 30rem;
+    width: 30rem;
+    border-radius: 6px;
+    box-shadow: 0px 1px 15px 1px var(--primary-shadow);
+}
+
+.desc {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    margin-top: 0.5rem;
+}
+
+.desc h2{
+    margin-bottom: var(--bottom-margin);
+}
+
+.desc p{
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+
+/* More about project section */
+.more-about {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+
+.more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
 }
 
 
