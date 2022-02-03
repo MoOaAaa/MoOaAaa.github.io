@@ -67,6 +67,12 @@ nav a {
     color: var(--primary-color);
     transition: var(--transition);
 }
+
+nav .title-link:hover{
+    color: var(--secondary-color);
+    border-bottom: none;
+}
+
 nav a:hover {
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
@@ -98,7 +104,7 @@ nav ul li {
     justify-content: center;
     gap: 2.5rem;
     max-width: 68.75rem;
-    margin: auto;
+    scroll-margin-top: 5rem;
 }
 
 .bio {
@@ -124,6 +130,7 @@ nav ul li {
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
+    scroll-margin-top: 5rem;
 }
 
 .skill-header {
@@ -152,6 +159,7 @@ nav ul li {
     background-color: var(--bg-color);
     padding: 32px 0;
     margin-top: 2rem;
+    scroll-margin-top: 5rem;
 }
 
 .project-pic {
@@ -199,6 +207,7 @@ nav ul li {
 /*Contact section */
 .contact {
     margin-top: 2rem;
+    scroll-margin-top: 5rem;
 }
 
 .contact h2 {
