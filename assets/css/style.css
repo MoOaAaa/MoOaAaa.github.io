@@ -353,4 +353,37 @@ nav ul li {
     border-bottom: 2px solid var(--secondary-color);
 }
 
+/*docs section */
+.docs{
+    background-color: var(--bg-color);
+    padding : 0.5rem;
+    margin-top: 2rem;
+    scroll-margin-top: 5rem;
+}
 
+.docs h1{
+    margin-bottom: var(--bottom-margin);
+}
+
+.docs div{
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0px 1px 15px 1px var(--primary-shadow);
+}
+
+.docs p{
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+
+.docs a{
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.docs a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
