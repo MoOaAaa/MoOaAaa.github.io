@@ -34,6 +34,11 @@
     </nav>
     
     <section class="maintenu" id="maintenu">
+        <img src="assets/img/Correcteur.png"
+             alt="Correcteur"
+            loading="lazy"
+            class="example-img"
+        >
         <img
                 src="assets/img/Cordial.png"
                 alt="Cordial"
@@ -42,28 +47,37 @@
         >
         <div class=" desc animate__animated animate__pulse">
             <h2>Projet de correcteur de français</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Animi dolorem ducimus excepturi minus officia perspiciatis, quos.
-            Animi atque doloremque eius minima, molestiae odit perspiciatis,
-            quos recusandae similique ullam ut voluptate!</p>
+            <p>Le projet est un correcteur orthographique en python, semblable au correcteur en ligne Cordial.
+            Le correcteur est réalisé en python, et implémente la base de données de mot Lexique383 ainsi qu'une
+            interface graphique réalisée avec PyQt5.</p>
         </div>
     </section>
 
     <section class="more-about">
         <h2>Plus sur le projet</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-            autem deleniti cupiditate molestias quis unde quae totam porro dicta
-            iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+            Ce projet est réalisé dans le cadre du cours de projet spécialisé de la session 6 du Cégep de Matane.
+            Le projet est réalisé par moi, et le but de cette maintenance était de rajouter une interface graphique
+            utilisable par l'utilisateur. Dans le futur, j'aimerais aussi rajouter la possibilité de corriger des
+            expressions mathématiques dans l'application, pour en faire un correcteur mutlifonction.
         </p>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-            nostrum dolor minus, libero delectus praesentium perferendis
+            Pour ce projet, j'ai décidé d'utiliser des technologies qui m'étaient inconnues pour progresser dans
+            mon domaine et améliorer encore mon adaptabilité et mes compétences.
+            Pour la correction des mots, j'ai choisis d'utiliser la librairie Lark, qui permet de créer une grammaire.
+            Je vais l'utiliser pour refaire la grammaire française dans mon application, et ainsi détecter les fautes.
+            <br>
+            Pour les fautes d'orthographe, j'ai choisi d'utiliser la base de mots français Lexique383 qui fait
+            partie du projet OpenLexicon, regroupant plusieurs bases de mots de différentes langues. La correction
+            des fautes se fait grâce à un algorithme qui va trouver des mots proches dans la base de données.
+            <br>
+            L'accès à cette base de données va se faire grâce à la libraire Pandas, qui est une librairie d'analyse
+            de données permettant de traiter des fichiers de données comme des .tsv, .csv, .xls ...
         </p>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-            consequuntur labore? Ea totam voluptas amet!
+            L'interface graphique est créée à l'aide PyQt5, une librairie permettant de créer des interfaces graphiques
+            en pyhton. Son aspect pratique grâce au QtDesigner, permettant de créer des interfaces graphiques
+            interractivement.
         </p>
     </section>
 
