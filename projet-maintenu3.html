@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Heidet Lucas" />
+    <meta name="description" content="Heidet Lucas's Portfolio" />
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+
+    <!-- Animated CSS CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Heidet Lucas - Projet en maintenance</title>
+</head>
+<body>
+<!-- Navbar -->
+<nav>
+    <h1><a href="index.html" class="title-link">Lucas HEIDET</a></h1>
+    <ul class="navigation">
+        <li><a href="index.html" class="nav-link">Retour au site</a></li>
+        <li><a href="#maintenu" class="nav-link">Le projet</a></li>
+        <li><a href="#research" class="nav-link">Mes recherches</a></li>
+        <li><a href="#docs" class="nav-link">Documentation</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
+
+<section class="maintenu" id="maintenu">
+    <img src="assets/img/pacman.png"
+         alt="Pacman"
+         loading="lazy"
+         class="example-img"
+         style="height: 30rem; width: 45rem;"
+    >
+    <div class=" desc animate__animated animate__pulse">
+        <h2>Projet tutor&eacute; : PacMan</h2>
+        <p>
+            Le projet est le projet tutor&eacute; du deuxi&egrave;eme semestre de DUT informatique, dans lequel nous
+            devions reproduire un pacman en Java, &agrave; l'aide de JavaFx.
+        </p>
+    </div>
+</section>
+
+<section class="more-about">
+    <h2>Plus sur le projet</h2>
+    <p>
+        Le projet a &eacute;t&eacute; r&eacute;alis&eacute; en &eacute;quipe de 5, et le but &eacute;tait de
+        recr&eacute;er un pacman et de lui rajouter ou non des fonctionnalit&eacute;s. Avec mon groupe, nous avions
+        refait le pacman le plus pr&eacute;cis&eacute;ment possible. Nous avons aussi rajout&eacute; un cr&eacute;ateur
+        de niveau, pour que le joueur puisse se mettre au d&eacute;fi avec d'autres maps.
+    </p>
+    <br />
+    <p>
+        La maintenance r&eacute;alis&eacute;e sur ce projet est le transfert de l'enregistrement des scores d'un fichier texte
+        &agrave; une base de donn&eacute; en local. Pour lier la base avec le jeu j'ai utilis&eacute; JDBC (Java
+        DataBase Connection) et une base de donnée PostgreSQL.
+    </p>
+
+</section>
+
+<section class="research" id="research">
+    <h1>Recherche li&eacute;es au projet</h1>
+    <div>
+        <a href="https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html" target="_blank">JDBC</a>
+        <p>
+            JDBC est une API Java permettant de connecter et d'ex&eacute;cuter des requ&ecirc;tes dans une base de
+            donn&eacute;es.
+        </p>
+    </div>
+
+    <div>
+        <a href="https://gameinternals.com/understanding-pac-man-ghost-behavior" target="_blank">PacMan Ghost Behavior</a>
+        <p>
+            Durant le projet, nous avons trouv&eacute; ce lien, qui analysait compl&ecirc;tement le jeu. Nous avons donc
+            utilis&eacute; ces donn&eacute;es pour refaire le comportement des fant&ocir;mes le plus fid&egrave;lement
+            possible.
+        </p>
+    </div>
+
+    <div>
+        <a href="https://openjfx.io/openjfx-docs/" target="_blank">JavaFX</a>
+        <p>
+            JavaFX est un framework Java permettant de cr&eacute;er des UI avanc&eacute;es. Contrairement &agrave; Java
+            Swing, JavaFX est un outil très puissant, m&ecirc;me si parfois complexe, pour cr&eacute;er des interfaces.
+        </p>
+    </div>
+
+</section>
+
+<section class="docs" id="docs">
+    <h1>Documentation</h1>
+    <a href="https://github.com/MoOaAaa/PTUTS2A2/tree/maintenance">Lien github</a>
+    <p>
+        Le r&eacute;pertoire github du projet. Il est issu d'un fork avec le projet principal et la branche dans laquelle
+        j'ai effectu&eacute; les modifications est la branche "maintenance". J'ai cr&eacute; un fichier "ConnectionBDD.java"
+        dans lequel j'ai regroup&eacute; toutes les classes dont j'avais besoin pour faire du DAO sur la base de
+        donn&eacute;es. J'ai ensuite modifi&eacute; les fichiers dans lesquels les scores &eacute;taient mis &agrave;
+        jour ou utilis&eacute;s. Pour lier la base de données, il faut modifier les valeurs dans la méthode connect() de
+        ConnectionBDD.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contactez moi</h2>
+    <div class="contact-form-container">
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="form-control">
+                    <label for="name">Nom</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="Entrez votre nom"
+                            class="input-field"
+                            required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="sender-email"
+                            placeholder="Entrez votre Email"
+                            class="input-field"
+                            required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                            id="message"
+                            cols="60"
+                            rows="10"
+                            placeholder="Entrez votre message"
+                            name="message"
+                            class="input-field"
+                            required
+                    ></textarea>
+                </div>
+                <input
+                        type="submit"
+                        value="Submit"
+                        id="submit-btn"
+                        class="submit-btn"
+                />
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="socials">
+    <a href="#" target="_blank"
+    ><img
+            src="assets/icons/icons8-linkedin-circled.gif"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+    /></a>
+    <a href="#" target="_blank"
+    ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+    /></a>
+</div>
+
+<!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
