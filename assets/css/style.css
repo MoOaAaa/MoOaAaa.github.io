@@ -269,6 +269,14 @@ nav ul li {
     color: var(--bg-color);
 }
 
+/*Socials*/
+.socials{
+    display: block;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+}
+
 /* Projet maintenu section*/
 .maintenu{
     display: flex;
