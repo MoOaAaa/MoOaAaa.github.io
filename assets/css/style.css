@@ -108,6 +108,14 @@ nav ul li {
     margin: auto;
 }
 
+.img-me{
+    width: 22rem;
+    height: 22rem;
+    border: 6px solid var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 2px 15px 2px var(--primary-shadow);
+}
+
 .bio {
     width: 25rem;
     padding: 0.625rem;
